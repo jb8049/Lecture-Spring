@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/context
+	   					   http://www.springframework.org/schema/context/spring-context.xsd">
+	<context:annotation-config/>
+	<bean class="di.calculator01.Calculator" id="calculator">
+		<constructor-arg value="150" index="0"/>
+		<constructor-arg value="15" index="1"/>
+	</bean>
+	<bean class="di.calculator01.MyCalculator" id="myCalculator" />
+</beans>
